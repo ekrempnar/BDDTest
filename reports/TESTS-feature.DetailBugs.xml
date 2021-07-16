@@ -1,0 +1,27 @@
+<testsuite name="feature.DetailBugs.As a user I want to add a product to my wishlist and share a product by using detail wishlist and share buttons" tests="2" errors="0" failures="0" skipped="0" time="152.987479" timestamp="2021-07-16T15:29:29.851235" hostname="DESKTOP-GMGJ0R1"><testcase classname="feature.DetailBugs.As a user I want to add a product to my wishlist and share a product by using detail wishlist and share buttons" name="I go to a product detail and click Wishlist and Share buttons, I should see this product in the my wishlist and Share button has a reaction -- @1.1 " status="passed" time="84.172887"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: I go to a product detail and click Wishlist and Share buttons, I should see this product in the my wishlist and Share button has a reaction -- @1.1 
+    Given I pass on boarding ... passed in 6.840s
+    Given I am on home page ... passed in 72.874s
+    When I open a product detail from a random category ... passed in 3.169s
+    When I click the button by "com.allandroidprojects.getirsample:id/layout_action1" ... passed in 1.210s
+    Then The "com.allandroidprojects.getirsample:id/layout_action1" must react ... passed in 0.080s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="feature.DetailBugs.As a user I want to add a product to my wishlist and share a product by using detail wishlist and share buttons" name="I go to a product detail and click Wishlist and Share buttons, I should see this product in the my wishlist and Share button has a reaction -- @1.2 " status="passed" time="68.814592"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: I go to a product detail and click Wishlist and Share buttons, I should see this product in the my wishlist and Share button has a reaction -- @1.2 
+    Given I pass on boarding ... passed in 6.852s
+    Given I am on home page ... passed in 58.061s
+    When I open a product detail from a random category ... passed in 2.577s
+    When I click the button by "com.allandroidprojects.getirsample:id/layout_action3" ... passed in 1.233s
+    Then The "com.allandroidprojects.getirsample:id/layout_action3" must react ... passed in 0.092s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

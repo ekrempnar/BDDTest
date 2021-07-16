@@ -1,0 +1,19 @@
+<testsuite name="feature.AddBasket.As a user I want to add and remove products from to the basket" tests="1" errors="0" failures="0" skipped="0" time="135.285531" timestamp="2021-07-16T15:25:36.350967" hostname="DESKTOP-GMGJ0R1"><testcase classname="feature.AddBasket.As a user I want to add and remove products from to the basket" name="I add products to the basket and remove them, I should not see the added products" status="passed" time="135.285531"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: I add products to the basket and remove them, I should not see the added products
+    Given I pass on boarding ... passed in 6.970s
+    Given I am on home page ... passed in 24.950s
+    When I change category to Snacks ... passed in 31.851s
+    When I open a product detail from Snacks category ... passed in 2.348s
+    When I add Snacks product to basket and return last page ... passed in 1.533s
+    When I change category to Baby Care ... passed in 30.583s
+    When I open a product detail from Baby Care category ... passed in 1.846s
+    When I add Baby Care product to basket and return last page ... passed in 2.081s
+    Then I go to basket and control added products and prices ... passed in 31.535s
+    Then I should deletes all products from basket and makes controls ... passed in 1.588s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

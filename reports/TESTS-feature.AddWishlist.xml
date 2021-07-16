@@ -1,0 +1,44 @@
+<testsuite name="feature.AddWishlist.As a user I want to add and remove products from to the wishlist" tests="1" errors="1" failures="0" skipped="0" time="22.937586" timestamp="2021-07-16T15:26:37.132240" hostname="DESKTOP-GMGJ0R1"><testcase classname="feature.AddWishlist.As a user I want to add and remove products from to the wishlist" name="I add products to the wishlist and remove them, I should not see the added products" status="failed" time="22.937586"><error type="StaleElementReferenceException" message="Message: androidx.test.uiautomator.StaleObjectException&#10;">
+<![CDATA[
+Failing step: Given I am on home page ... failed in 16.248s
+Location: feature/AddWishlist.feature:5
+Traceback (most recent call last):
+  File "c:\users\ekrem\appdata\local\programs\python\python39\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\ekrem\appdata\local\programs\python\python39\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "steps\Given.py", line 18, in check_homepage_launch
+    context.driver.find_element_by_id("com.allandroidprojects.getirsample:id/action_search").is_displayed()
+  File "c:\users\ekrem\appdata\local\programs\python\python39\lib\site-packages\appium\webdriver\webelement.py", line 78, in is_displayed
+    return self._execute(RemoteCommand.IS_ELEMENT_DISPLAYED)['value']
+  File "c:\users\ekrem\appdata\local\programs\python\python39\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "c:\users\ekrem\appdata\local\programs\python\python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "c:\users\ekrem\appdata\local\programs\python\python39\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "c:\users\ekrem\appdata\local\programs\python\python39\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "c:\users\ekrem\appdata\local\programs\python\python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: androidx.test.uiautomator.StaleObjectException
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: I add products to the wishlist and remove them, I should not see the added products
+    Given I pass on boarding ... passed in 6.690s
+    Given I am on home page ... failed in 16.248s
+    Given I get the number of categories and write this number to console ... skipped in 0.000s
+    When I open a random category ... skipped in 0.000s
+    When I add 3 random products to wishlist via mini heart icon ... skipped in 0.000s
+    When I open the menu in the left ... skipped in 0.000s
+    When I go to My Wishlist and controls the page and products ... skipped in 0.000s
+    When I delete all of them from Wishlist ... skipped in 0.000s
+    Then I should not see the products I added to my wishlist ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
